@@ -23,3 +23,26 @@
 .main-link:focus {
   color: var(--color-green-main);
 }
+
+.button-green {
+  background: var(--color-green-main);
+  box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
+  color: #fff;
+}
+.button-green:hover {
+  background: var(--color-hover-green-btn);
+  box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
+}
+.button-green:focus {
+  color: var(--color-main-text);
+  border: 1px solid var(--color-main-text);
+}
+.button-white {
+  border: 1px solid #dadee2;
+  color: var(--color-main-text);
+}
+
+.button-white:hover,
+.button-white:focus {
+  border: 1px solid var(--color-main-text);
+}

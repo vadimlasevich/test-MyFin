@@ -27,32 +27,6 @@
 .header__input {
   position: relative;
 }
-/* .header__input::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translate(0, -50%);
-  background-image: url('../../images/search.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
-}
-.header__input::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translate(0, -50%);
-  background-image: url('../../images/close.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  display: none;
-} */
 .header__input input {
   background: #f1f4f7;
   font-size: 1.6rem;
