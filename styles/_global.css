@@ -1,0 +1,25 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-reset:active {
+  outline: none;
+}
+.main-link {
+  color: var(--color-main-link);
+}
+.main-link:focus {
+  color: var(--color-green-main);
+}
