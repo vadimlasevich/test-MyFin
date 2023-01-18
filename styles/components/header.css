@@ -1,24 +1,24 @@
 .header {
-  padding: 4rem 0;
+  padding: 40px 0;
   border-bottom: 1px solid #e8ecef;
 }
 .header__info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 .header__content {
   width: 75%;
 }
 .header__title {
   font-weight: 900;
-  font-size: 3rem;
-  line-height: 3.6rem;
-  margin-bottom: 2rem;
+  font-size: 30px;
+  line-height: 120%;
+  margin-bottom: 20px;
 }
 .header__subtitle {
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 150%;
 }
 .header__images {
@@ -29,11 +29,11 @@
 }
 .header__input input {
   background: #f1f4f7;
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 150%;
   color: var(--color-main-text);
   border: 1px solid #dadee2;
-  padding: 1.5rem 4rem;
+  padding: 15px 40px;
   border-radius: 3px;
   width: 100%;
 }
@@ -58,4 +58,19 @@
   display: none;
   right: 10px;
   z-index: 100;
+}
+.header__subtitle-link-display {
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 10px;
+  display: none;
+}
+.header__subtitle-link-display svg {
+  transform: rotate(90deg);
+}
+.header__hidden-text {
+  transition: all 0.5s ease;
+}
+.header__hidden-text a {
+  display: inline !important;
 }

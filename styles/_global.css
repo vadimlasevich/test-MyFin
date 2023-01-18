@@ -1,7 +1,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 15px;
 }
 
 .btn-reset {
@@ -18,14 +18,18 @@
   outline: none;
 }
 .main-link {
+  display: flex;
+  align-items: center;
   color: var(--color-main-link);
+  fill: var(--color-main-link);
 }
 .main-link:focus {
   color: var(--color-main-green);
+  fill: var(--color-main-green);
 }
 .investments-title-block {
   font-weight: 900;
-  font-size: 2.2rem;
+  font-size: 22px;
   line-height: 136%;
 }
 

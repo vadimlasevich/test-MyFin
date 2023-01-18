@@ -1,12 +1,12 @@
 .investments-info {
-  margin: 4rem 0;
+  margin: 40px 0;
 }
 .investments-info .container {
   display: flex;
   justify-content: space-between;
 }
 .investments-info-block {
-  padding: 3rem;
+  padding: 30px;
   border: 1px solid #e8ecef;
   border-radius: 5px;
   width: calc(50% - 15px);
@@ -31,17 +31,17 @@
 }
 .investments-stock__table-btn {
   color: #adb4bf;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 125%;
   text-transform: uppercase;
   padding-bottom: 8px;
 }
 .investments-stock__table-btn:not(:last-child) {
-  margin-right: 3rem;
+  margin-right: 30px;
 }
 .investments-stock__table-header {
   display: flex;
-  margin: 1.5rem 0 1.2rem 0;
+  margin: 15px 0 12px 0;
 }
 .investments-stock__table-title,
 .investments-calendar__table-title {
@@ -82,6 +82,9 @@
   font-size: 12px;
   line-height: 125%;
   color: #9299a2;
+}
+.investments-stock__table-item-logo {
+  min-width: 30px;
 }
 .investments-stock__table-item-price span {
   display: block;
@@ -168,9 +171,9 @@
   width: 20%;
 }
 .table-changes-arrow {
-  width: 16px;
-  height: 16px;
-  flex: 1;
+  width: 10px;
+  height: 12px;
+  margin-right: 5px;
 }
 .table-arrow-btn {
   width: 10px;
@@ -181,14 +184,6 @@
 .table-footer-link {
   font-size: 16px;
   line-height: 125%;
-  display: flex;
-  align-items: center;
-  color: var(--color-main-link);
-  fill: var(--color-main-link);
-}
-.table-footer-link:focus {
-  color: var(--color-main-green);
-  fill: var(--color-main-green);
 }
 
 .table-changes-up {
@@ -201,8 +196,6 @@
 }
 .table-changes-down .table-changes-arrow {
   transform: rotate(180deg);
-  padding-left: 6px;
-  padding-top: 3px;
 }
 
 .time-active {
