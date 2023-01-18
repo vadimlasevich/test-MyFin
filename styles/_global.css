@@ -21,11 +21,16 @@
   color: var(--color-main-link);
 }
 .main-link:focus {
-  color: var(--color-green-main);
+  color: var(--color-main-green);
+}
+.investments-title-block {
+  font-weight: 900;
+  font-size: 2.2rem;
+  line-height: 136%;
 }
 
 .button-green {
-  background: var(--color-green-main);
+  background: var(--color-main-green);
   box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
   color: #fff;
 }
@@ -45,4 +50,7 @@
 .button-white:hover,
 .button-white:focus {
   border: 1px solid var(--color-main-text);
+}
+.footer {
+  height: 1rem;
 }

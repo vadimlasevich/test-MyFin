@@ -38,11 +38,11 @@
     <main>
       <section class="investments-linking">
         <div class="container">
-          <h2 class="investments-items__title">Все об инвестициях</h2>
+          <h2 class="investments-linking__title">Все об инвестициях</h2>
           <ul class="investments-linking__items">
             <li class="investments-linking__item item-w60">
               <div class="investments-linking__item-content">
-                <h3 class="investments-linking__item-title">Акции</h3>
+                <h3 class="investments-linking__item-title investments-title-block">Акции</h3>
                 <p class="investments-linking__item-subtitle">Размеры дивидендов и даты выплат на календаре</p>
                 <button class="investments-linking__item-button button-green btn-reset">Купить</button>
               </div>
@@ -52,21 +52,21 @@
             </li>
             <li class="investments-linking__item item-w40">
               <div class="investments-linking__item-content">
-                <h3 class="investments-linking__item-title">Облигации</h3>
+                <h3 class="investments-linking__item-title investments-title-block">Облигации</h3>
                 <p class="investments-linking__item-subtitle">Инвестируйте в ценные бумаги и зарабатывайте на процентах</p>
                 <button class="investments-linking__item-button button-green btn-reset">Подобрать</button>
               </div>
             </li>
             <li class="investments-linking__item item-w40">
               <div class="investments-linking__item-content">
-                <h3 class="investments-linking__item-title">Дивиденды</h3>
+                <h3 class="investments-linking__item-title investments-title-block">Дивиденды</h3>
                 <p class="investments-linking__item-subtitle">Размеры дивидендов и даты выплат на календаре</p>
                 <button class="investments-linking__item-button button-white btn-reset">Подробнее</button>
               </div>
             </li>
             <li class="investments-linking__item item-w60">
               <div class="investments-linking__item-content">
-                <h3 class="investments-linking__item-title">Индивидуальный инвестиционный счет</h3>
+                <h3 class="investments-linking__item-title investments-title-block">Индивидуальный инвестиционный счет</h3>
                 <p class="investments-linking__item-subtitle">Откройте счет и увеличивайте доходность своих инвестиций</p>
                 <button class="investments-linking__item-button button-green btn-reset">Открыть ИИС</button>
               </div>
@@ -76,7 +76,7 @@
             </li>
             <li class="investments-linking__item item-w50">
               <div class="investments-linking__item-content">
-                <h3 class="investments-linking__item-title">Брокеры</h3>
+                <h3 class="investments-linking__item-title investments-title-block">Брокеры</h3>
                 <p class="investments-linking__item-subtitle">Инвестируйте вместе с профессионалами.</p>
                 <button class="investments-linking__item-button button-white btn-reset">Выбрать</button>
               </div>
@@ -86,7 +86,7 @@
             </li>
             <li class="investments-linking__item item-w50">
               <div class="investments-linking__item-content">
-                <h3 class="investments-linking__item-title">Обучение</h3>
+                <h3 class="investments-linking__item-title investments-title-block">Обучение</h3>
                 <p class="investments-linking__item-subtitle">Учитесь инвестировать БЕСПЛАТНО вместе с Банкирос</p>
                 <button class="investments-linking__item-button button-white btn-reset">Пройти обучение</button>
               </div>
@@ -95,8 +95,269 @@
         </div>
       </section>
       <section class="investments-info">
-        <div class="container"></div>
+        <div class="container">
+          <div class="investments-stock investments-info-block">
+            <div class="investments-stock__header">
+              <h3 class="investments-stock__title investments-title-block">Акции</h3>
+              <select name="days" id="select-days"></select>
+            </div>
+            <div class="investments-stock__table">
+              <div class="investments-stock__table-buttons">
+                <button class="investments-stock__table-btn table-btn-active btn-reset">Лидеры роста</button>
+                <button class="investments-stock__table-btn btn-reset">Лидеры роста 2</button>
+              </div>
+              <div class="investments-stock__table-header">
+                <div class="investments-stock__table-title table-col-w60">Тикер</div>
+                <div class="investments-stock__table-title table-col-w20">Посл. цена</div>
+                <div class="investments-stock__table-title table-col-w20">Изм.</div>
+              </div>
+              <ul class="investments-stock__table-items">
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-logo-1.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">ВТБ банк</h4>
+                      <span class="investments-stock__table-item-subtitle">VTBR</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>18.24 ₽</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-up">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-no-logo.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">Пао «Русгидро»</h4>
+                      <span class="investments-stock__table-item-subtitle">HYDR</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>4.90 ₽</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-up">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-logo-2.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">The Walt Disney Company</h4>
+                      <span class="investments-stock__table-item-subtitle">DIS-RM</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>54.23 $</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-down">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-logo-3.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">Газпром</h4>
+                      <span class="investments-stock__table-item-subtitle">GAZP</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>14.36 ₽</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-down">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-no-logo.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">The Walt Disney Company</h4>
+                      <span class="investments-stock__table-item-subtitle">DIS-RM</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>9.24₽</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-up">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-logo-4.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">Cisco Systems, Inc.</h4>
+                      <span class="investments-stock__table-item-subtitle">CSCO-RM</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>18.24 $</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-up">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+              </ul>
+              <div class="investments-stock__table-footer">
+                <a class="investments-stock__table-footer-link table-footer-link" href="#"
+                  >Больше лидеров роста
+                  <svg class="table-arrow-btn">
+                    <use xlink:href="./images/sprite.svg#arrow-btn"></use>
+                  </svg>
+                </a>
+                <span class="investments-stock__table-footer-update">Обновлено в 12:30</span>
+              </div>
+            </div>
+          </div>
+          <div class="investments-calendar investments-info-block">
+            <div class="investments-calendar__header">
+              <h3 class="investments-calendar__title investments-title-block">Экономический календарь</h3>
+            </div>
+            <div class="investments-calendar__table">
+              <div class="investments-calendar__table-header">
+                <div class="investments-calendar__table-title">Ноябрь 17</div>
+              </div>
+              <ul class="investments-calendar__table-items">
+                <li class="investments-calendar__table-item">
+                  <div class="investments-calendar__table-item-time time-active"><span>13:00</span></div>
+                  <div class="investments-calendar__table-item-country">
+                    <img src="./images/russia.png" alt="russia-logo" />
+                  </div>
+                  <div class="investments-calendar__table-item-status status-red"><span></span></div>
+                  <div class="investments-calendar__table-item-info">Индекс цен на продовольствие</div>
+                </li>
+                <li class="investments-calendar__table-item">
+                  <div class="investments-calendar__table-item-time time-active"><span>13:00</span></div>
+                  <div class="investments-calendar__table-item-country">
+                    <img src="./images/russia.png" alt="russia-logo" />
+                  </div>
+                  <div class="investments-calendar__table-item-status status-red"><span></span></div>
+                  <div class="investments-calendar__table-item-info">Employment Overall Flash</div>
+                </li>
+                <li class="investments-calendar__table-item">
+                  <div class="investments-calendar__table-item-time"><span>16:45</span></div>
+                  <div class="investments-calendar__table-item-country">
+                    <img src="./images/united-states-of-america.png" alt="united-states-of-america-logo" />
+                  </div>
+                  <div class="investments-calendar__table-item-status status-yellow"><span></span></div>
+                  <div class="investments-calendar__table-item-info">Изменение занятости (кв/кв)</div>
+                </li>
+                <li class="investments-calendar__table-item">
+                  <div class="investments-calendar__table-item-time"><span>23:15</span></div>
+                  <div class="investments-calendar__table-item-country">
+                    <img src="./images/united-states-of-america.png" alt="united-states-of-america-logo" />
+                  </div>
+                  <div class="investments-calendar__table-item-status status-yellow"><span></span></div>
+                  <div class="investments-calendar__table-item-info">
+                    Изменение занятости (кв/кв), ИПЦ Франции, базовый индекс цен производителей (PPI) (г/г) (окт)
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="investments-calendar__table">
+              <div class="investments-calendar__table-header">
+                <div class="investments-calendar__table-title">Ноябрь 18</div>
+              </div>
+              <ul class="investments-calendar__table-items">
+                <li class="investments-calendar__table-item">
+                  <div class="investments-calendar__table-item-time"><span>09:00</span></div>
+                  <div class="investments-calendar__table-item-country">
+                    <img src="./images/united-states-of-america.png" alt="united-states-of-america-logo" />
+                  </div>
+                  <div class="investments-calendar__table-item-status status-yellow"><span></span></div>
+                  <div class="investments-calendar__table-item-info">ИПЦ Франции</div>
+                </li>
+                <li class="investments-calendar__table-item">
+                  <div class="investments-calendar__table-item-time"><span>14:40</span></div>
+                  <div class="investments-calendar__table-item-country">
+                    <img src="./images/russia.png" alt="russia-logo" />
+                  </div>
+                  <div class="investments-calendar__table-item-status status-red"><span></span></div>
+                  <div class="investments-calendar__table-item-info">PPI exFood/Energy MM</div>
+                </li>
+                <li class="investments-calendar__table-item">
+                  <div class="investments-calendar__table-item-time"><span>16:45</span></div>
+                  <div class="investments-calendar__table-item-country">
+                    <img src="./images/russia.png" alt="russia-logo" />
+                  </div>
+                  <div class="investments-calendar__table-item-status status-green"><span></span></div>
+                  <div class="investments-calendar__table-item-info">Речь члена FOMC Уильямса</div>
+                </li>
+                <li class="investments-calendar__table-item">
+                  <div class="investments-calendar__table-item-time"><span>16:45</span></div>
+                  <div class="investments-calendar__table-item-country">
+                    <img src="./images/united-states-of-america.png" alt="united-states-of-america-logo" />
+                  </div>
+                  <div class="investments-calendar__table-item-status status-yellow"><span></span></div>
+                  <div class="investments-calendar__table-item-info">Базовый индекс цен производителей (PPI) (г/г) (окт)</div>
+                </li>
+              </ul>
+            </div>
+            <div class="investments-calendar__table-footer">
+              <a class="investments-calendar__table-footer-link table-footer-link" href="#"
+                >Больше событий
+                <svg class="table-arrow-btn">
+                  <use xlink:href="./images/sprite.svg#arrow-btn"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="footer"></footer>
   </body>
 </html>

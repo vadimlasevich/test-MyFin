@@ -1,7 +1,7 @@
 .investments-linking {
   margin-top: 4rem;
 }
-.investments-items__title {
+.investments-linking__title {
   font-weight: 900;
   font-size: 2.4rem;
   line-height: 125%;
@@ -29,9 +29,6 @@
   height: 100%;
 }
 .investments-linking__item-title {
-  font-weight: 900;
-  font-size: 2.2rem;
-  line-height: 136%;
   margin-bottom: 1rem;
 }
 .investments-linking__item-subtitle {

@@ -1,0 +1,219 @@
+.investments-info {
+  margin: 4rem 0;
+}
+.investments-info .container {
+  display: flex;
+  justify-content: space-between;
+}
+.investments-info-block {
+  padding: 3rem;
+  border: 1px solid #e8ecef;
+  border-radius: 5px;
+  width: calc(50% - 15px);
+}
+.investments-calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.investments-calendar__title,
+.investments-stock__title {
+  margin-bottom: 20px;
+}
+.investments-stock__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.investments-stock__table-buttons {
+  display: flex;
+  border-bottom: 1px solid #e8ecef;
+}
+.investments-stock__table-btn {
+  color: #adb4bf;
+  font-size: 1.4rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+.investments-stock__table-btn:not(:last-child) {
+  margin-right: 3rem;
+}
+.investments-stock__table-header {
+  display: flex;
+  margin: 1.5rem 0 1.2rem 0;
+}
+.investments-stock__table-title,
+.investments-calendar__table-title {
+  display: flex;
+  font-size: 12px;
+  line-height: 125%;
+  color: #9299a2;
+}
+.investments-stock__table-title:nth-child(2) {
+  justify-content: center;
+}
+.investments-stock__table-title:nth-child(3) {
+  justify-content: end;
+}
+.investments-stock__table-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e8ecef;
+  padding: 10px 0;
+}
+.investments-stock__table-item:nth-child(1) {
+  border-top: 1px solid #e8ecef;
+}
+.investments-stock__table-item-info {
+  display: flex;
+  align-items: center;
+}
+.investments-stock__table-item-ticker {
+  margin-left: 10px;
+}
+.investments-stock__table-item-title {
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--color-main-link);
+  margin-bottom: 5px;
+}
+.investments-stock__table-item-subtitle {
+  font-size: 12px;
+  line-height: 125%;
+  color: #9299a2;
+}
+.investments-stock__table-item-price span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+}
+.investments-stock__table-item-changes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.investments-stock__table-changes-interest {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5px;
+}
+.investments-stock__table-changes-interest,
+.investments-stock__table-changes-sum {
+  font-size: 14px;
+  line-height: 125%;
+}
+.investments-stock__table-footer {
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.investments-stock__table-footer-update {
+  font-size: 14px;
+  line-height: 143%;
+  color: #adb4bf;
+}
+
+.investments-calendar__table:not(:last-child) {
+  margin-bottom: 20px;
+}
+.investments-calendar__table-header {
+  margin-bottom: 12px;
+}
+.investments-calendar__table-item {
+  border-bottom: 1px solid #e8ecef;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.investments-calendar__table-item:nth-child(1) {
+  border-top: 1px solid #e8ecef;
+}
+.investments-calendar__table-item-time {
+  font-size: 12px;
+  line-height: 125%;
+  margin-right: 15px;
+  padding: 3px 5px;
+  border-radius: 50px;
+}
+.investments-calendar__table-item-country {
+  min-width: 20px;
+  min-height: 20px;
+}
+.investments-calendar__table-item-status span {
+  display: block;
+  margin: 0 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.investments-calendar__table-item-info {
+  font-size: 14px;
+  line-height: 125%;
+}
+.investments-calendar__table-footer {
+  margin-top: auto;
+}
+
+.table-btn-active {
+  color: var(--color-main-text);
+  border-bottom: 3px solid var(--color-main-green);
+}
+.table-col-w60 {
+  width: 60%;
+}
+.table-col-w20 {
+  width: 20%;
+}
+.table-changes-arrow {
+  width: 16px;
+  height: 16px;
+  flex: 1;
+}
+.table-arrow-btn {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  padding-top: 2px;
+}
+.table-footer-link {
+  font-size: 16px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  color: var(--color-main-link);
+  fill: var(--color-main-link);
+}
+.table-footer-link:focus {
+  color: var(--color-main-green);
+  fill: var(--color-main-green);
+}
+
+.table-changes-up {
+  color: var(--color-main-green);
+  fill: var(--color-main-green);
+}
+.table-changes-down {
+  color: var(--color-main-red);
+  fill: var(--color-main-red);
+}
+.table-changes-down .table-changes-arrow {
+  transform: rotate(180deg);
+  padding-left: 6px;
+  padding-top: 3px;
+}
+
+.time-active {
+  background: #ffe6e7;
+}
+.status-red span {
+  background: var(--color-main-red);
+}
+.status-yellow span {
+  background: var(--color-main-yellow);
+}
+.status-green span {
+  background: var(--color-main-green);
+}
