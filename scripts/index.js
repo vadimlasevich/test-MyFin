@@ -9,6 +9,21 @@ const investmentsStockTableBtns = document.querySelectorAll('.investments-stock_
 const investmentsStockTableItems = document.querySelectorAll('.investments-stock__table-items');
 const select = document.querySelector('select');
 
+const windowHeight = window.innerHeight;
+
+const lazyShowImages = () => {
+  const scrollWindow = window.scrollY + windowHeight;
+  const images = document.querySelectorAll('[data-src]');
+
+  images.forEach((img) => {
+    if (scrollWindow > img.offsetTop) {
+      img.setAttribute('src', img.getAttribute('data-src'));
+    }
+  });
+
+  console.log(images);
+};
+
 const toggleShowText = () => {
   headerSubtitle.classList.toggle('hidden-text');
 
@@ -48,3 +63,7 @@ headerInputBtnClose.addEventListener('click', () => {
   headerInput.value = '';
   headerInputBtnClose.style.display = 'none';
 });
+
+window.addEventListener('scroll', lazyShowImages);
+
+lazyShowImages();
