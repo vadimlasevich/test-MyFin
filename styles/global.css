@@ -20,6 +20,8 @@
 .main-link {
   display: flex;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   color: var(--color-main-link);
   fill: var(--color-main-link);
 }

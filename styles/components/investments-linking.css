@@ -9,7 +9,10 @@
 .investments-linking__items {
   margin-top: 20px;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
   gap: 30px;
 }
 .investments-linking__item {
@@ -25,6 +28,9 @@
 }
 .investments-linking__item-content {
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
 }
