@@ -1,10 +1,10 @@
-@import '_null.css';
-@import '_global.css';
-@import '_vars.css';
-@import '_fonts.css';
+@import './_null.css';
+@import './_global.css';
+@import './_vars.css';
+@import './_fonts.css';
 
 @import './components/header.css';
 @import './components/investments-linking.css';
 @import './components/investments-info.css';
 
-@import '_media.css';
+@import './_media.css';

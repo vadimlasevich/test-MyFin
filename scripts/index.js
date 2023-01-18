@@ -38,24 +38,13 @@ investmentsStockTableBtns.forEach((btn, index) => {
   });
 });
 
+$(function () {
+  $('select').selectric();
+});
+
 headerLinkDisplay.addEventListener('click', toggleShowText);
 headerInput.addEventListener('input', displayCloseBtn);
 headerInputBtnClose.addEventListener('click', () => {
   headerInput.value = '';
   headerInputBtnClose.style.display = 'none';
 });
-
-// function sel() {
-//   select.selectric();
-// }
-
-// sel();
-$(function () {
-  $('select').selectric();
-});
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   $('select').selectric();
-// });
-
-// console.log($('select'));
