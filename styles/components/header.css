@@ -20,6 +20,7 @@
 .header__subtitle {
   font-size: 16px;
   line-height: 150%;
+  transition: all 0.5s ease;
 }
 .header__images {
   opacity: 0.1;
@@ -67,10 +68,18 @@
 }
 .header__subtitle-link-display svg {
   transform: rotate(90deg);
+  transition: all 0.5s ease;
 }
 .header__hidden-text {
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 .header__hidden-text a {
   display: inline !important;
+}
+.dotted {
+  display: none;
+}
+.arrow-btn-rotate {
+  transform: rotate(-90deg) !important;
+  margin-bottom: 2px;
 }

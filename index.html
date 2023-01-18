@@ -7,6 +7,10 @@
     <title>Test-MyFin</title>
 
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/selectric.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/jquery.selectric.js" defer></script>
     <script src="scripts/index.js" defer></script>
   </head>
   <body>
@@ -15,8 +19,11 @@
         <div class="header__info">
           <div class="header__content">
             <h1 class="header__title">Облигации в России</h1>
-            <p class="header__subtitle">
-              Облигации федерального, субфедерального займа, еврооблигации и облигации самых известных компаний
+            <p class="header__subtitle hidden-text">
+              Облигации федерального, субфедерального займа, еврооблигации и облигации самых известных компаний<span
+                class="dotted"
+                >...</span
+              >
               <span class="header__hidden-text"
                 >России. Изучайте стоимость облигаций и ее изменение, доходность, купонные выплаты и многие другие показатели.
                 Чтобы узнать больше про облигации и инвестирование в ценные бумаги, посетите наш
@@ -107,7 +114,15 @@
           <div class="investments-stock investments-info-block">
             <div class="investments-stock__header">
               <h3 class="investments-stock__title investments-title-block">Акции</h3>
-              <select name="days" id="select-days"></select>
+              <select name="days" id="select-days">
+                <option>1 день</option>
+                <option>2 день</option>
+                <option>3 день</option>
+                <option>4 день</option>
+                <option>5 день</option>
+                <option>6 день</option>
+                <option>7 день</option>
+              </select>
             </div>
             <div class="investments-stock__table">
               <div class="investments-stock__table-buttons">
@@ -249,6 +264,146 @@
                     <span>18.24 $</span>
                   </div>
                   <div class="investments-stock__table-item-changes table-col-w20 table-changes-up">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="investments-stock__table-items hidden">
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-no-logo.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">The Walt Disney Company</h4>
+                      <span class="investments-stock__table-item-subtitle">DIS-RM</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>9.24₽</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-up">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-logo-4.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">Cisco Systems, Inc.</h4>
+                      <span class="investments-stock__table-item-subtitle">CSCO-RM</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>18.24 $</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-up">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-logo-1.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">ВТБ банк</h4>
+                      <span class="investments-stock__table-item-subtitle">VTBR</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>18.24 ₽</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-up">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-no-logo.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">Пао «Русгидро»</h4>
+                      <span class="investments-stock__table-item-subtitle">HYDR</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>4.90 ₽</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-up">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-logo-2.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">The Walt Disney Company</h4>
+                      <span class="investments-stock__table-item-subtitle">DIS-RM</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>54.23 $</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-down">
+                    <div class="investments-stock__table-changes-interest">
+                      <svg class="table-changes-arrow">
+                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                      </svg>
+                      <span>138.75 %</span>
+                    </div>
+                    <div class="investments-stock__table-changes-sum">4.90 ₽</div>
+                  </div>
+                </li>
+                <li class="investments-stock__table-item">
+                  <div class="investments-stock__table-item-info table-col-w60">
+                    <div class="investments-stock__table-item-logo">
+                      <img src="./images/table-item-logo-3.png" alt="logo" />
+                    </div>
+                    <div class="investments-stock__table-item-ticker">
+                      <h4 class="investments-stock__table-item-title">Газпром</h4>
+                      <span class="investments-stock__table-item-subtitle">GAZP</span>
+                    </div>
+                  </div>
+                  <div class="investments-stock__table-item-price table-col-w20">
+                    <span>14.36 ₽</span>
+                  </div>
+                  <div class="investments-stock__table-item-changes table-col-w20 table-changes-down">
                     <div class="investments-stock__table-changes-interest">
                       <svg class="table-changes-arrow">
                         <use xlink:href="./images/sprite.svg#arrow"></use>

@@ -58,3 +58,6 @@
 .footer {
   height: 1rem;
 }
+.hidden {
+  display: none;
+}

@@ -70,11 +70,14 @@
   .header__title {
     font-size: 26px;
   }
-  .header__subtitle {
+  .hidden-text {
     max-height: 75px;
     overflow: hidden;
   }
-  .header__hidden-text {
+  .hidden-text .dotted {
+    display: inline;
+  }
+  .hidden-text .header__hidden-text {
     opacity: 0;
   }
   .header__subtitle-link-display {

@@ -16,14 +16,14 @@
   flex-direction: column;
 }
 
-.investments-calendar__title,
-.investments-stock__title {
+.investments-calendar__title {
   margin-bottom: 20px;
 }
 .investments-stock__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .investments-stock__table-buttons {
   display: flex;
